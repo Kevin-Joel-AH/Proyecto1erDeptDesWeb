@@ -1,0 +1,322 @@
+/*Crea fuente local para la pagina*/
+@font-face {
+    font-family: 'Halo';
+    src: url('../fuentes/Halo.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Texto del Menu del Juego*/
+#nombre{
+    font-family: 'Halo';
+    font-size: 300px;
+    color: white;
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+}
+#leyenda{
+    
+    font-family: 'Halo';
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    bottom: 89%;
+    left: 30%;
+}
+#instrucciones{
+    font-family: 'Halo';
+    color: white;
+    position: absolute;
+    bottom: 23%;
+    left: 81%;
+}
+#eleccion{
+    font-family: 'Halo';
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    bottom: 4%;
+    left: 20%;
+}
+#usuario{
+    font-family: 'Halo';
+    font-size: 25px;
+    color: rgb(1, 255, 242);
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+}
+/*Boton de historia (Dimensiones y Posición)*/
+#btn_his{
+    width: 64px;
+    height: 64px;
+    background-image: url('../imagenes/Intro.png');
+    position: absolute;
+    bottom: calc(100% - 100px);
+    right: calc(100% - 100px);
+}
+#vid{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    bottom: 25%;
+    right: 25%;
+}
+video{
+    position: absolute;
+}
+#cerrar{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url('../imagenes/cerrar.gif');
+    right: 75px;
+}
+/*Imagen referente a los botones a utilizar*/
+#botones{
+    width: 192px;
+    height: 64px;
+    position: absolute;
+    bottom: 12%;
+    left: 83%;
+    background-image: url("../imagenes/Botones.gif");
+}
+/*Contenedor de los posibles colores del personaje*/
+#colores{
+    width: 675px;
+    height: 126px;
+   position: absolute;
+    bottom: 60px;
+    right: 390px;
+}
+#verde{
+    width: 75px;
+    height: 126px;
+    background-image: url("../imagenes/SpartanVerde4.gif");
+    transition: all 0.3s;
+}
+#rojo{
+    width: 75px;
+    height: 126px;
+    background-image: url("../imagenes/SpartanRojo4.gif");
+    transition: all 0.3s;
+}
+#azul{
+    width: 75px;
+    height: 126px;
+    background-image: url("../imagenes/SpartanAzul4.gif");
+    transition: all 0.3s;
+}
+#morado{
+    width: 75px;
+    height: 126px;
+    background-image: url("../imagenes/SpartanMorado4.gif");
+    transition: all 0.3s;
+}
+#cafe{
+    width: 75px;
+    height: 126px;
+    background-image: url("../imagenes/SpartanCafe4.gif");
+    transition: all 0.3s;
+}
+#naranja{
+    width: 75px;
+    height: 126px;
+    background-image: url("../imagenes/SpartanNaranja4.gif");
+    transition: all 0.3s;
+}
+#rosa{
+    width: 75px;
+    height: 126px;
+    background-image: url("../imagenes/SpartanRosa4.gif");
+    transition: all 0.3s;
+}
+#blanco{
+    width: 75px;
+    height: 126px;
+    background-image: url("../imagenes/SpartanBlanco4.gif");
+    transition: all 0.3s;
+}
+#negro{
+    width: 75px;
+    height: 126px;
+    background-image: url("../imagenes/SpartanNegro4.gif");
+    transition: all 0.3s;
+}
+
+
+/*Animación al pasar sobre los posibles colores del personaje*/
+#verde:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+#rojo:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+#azul:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+#morado:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+#cafe:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+#naranja:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+#rosa:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+#blanco:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+#negro:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+/*Texto donde se muestran los creditos del jugador*/
+#creditos{
+    font-family: 'Halo';
+    color: rgb(243, 227, 0);
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+/*Texto donde se muestra el puntuaje del Jugador*/
+#score{
+    font-family: 'Halo';
+    color: black;
+    position: absolute;
+    bottom: 70px;
+    left: 10px;
+}
+/*Texto donde se muestra la munición del Jugador*/
+#muniT{
+    font-family: 'Halo';
+    color: black;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+/*Cuerpo o Fondo del juego (Segun la clase, cambiara el fondo)*/
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imagenes/Menu.png");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.Dia {
+    background-image: url("../imagenes/anillo_D.png");
+    background-size: cover;
+    transition:background-image .50s;
+}
+.Noche {
+    background-image: url("../imagenes/anillo_N.png");
+    background-size: cover;
+    transition:background-image .50s;
+}
+.Base {
+    background-image: url("../imagenes/base.png");
+    background-size: cover;
+    transition:background-image .50s;
+}
+.Nave {
+    background-image: url("../imagenes/nave.png");
+    background-size: cover;
+    transition:background-image .50s;
+}
+.N-Pow {
+    background-image: url("../imagenes/anillo_roto.png");
+    background-size: cover;
+    transition:background-image .50s;
+}
+/*Suelo del juego (Segun la clase, cambiara el Suelo)*/
+#suelo{
+    width: 100%;
+    height: 100px;
+    background-color: none;
+    position: absolute;
+    bottom: 0;
+}
+.Dia #suelo{
+    background-color: #101110;
+    transition:background-color .50s;
+}
+.Noche #suelo{
+    background-color: #0a0a0a;
+    transition:background-color .50s;
+}
+.Base #suelo{
+    background-color: #343642;
+    transition:background-color .50s;
+}
+.Nave #suelo{
+    background-color: #392538;
+    transition:background-color .50s;
+}
+.N-Pow #suelo{
+    background-color: #fca7e7;
+    transition:background-color .50s;
+}
+/*Personaje principal (Dimensiones y Posición)*/
+#personaje{
+    width: 75px;
+    height: 126px;
+    background-image: none;
+    position: absolute;
+    bottom: 100px;
+    right: calc(100% - 150px);
+}
+/*Enemigos del juego (Dimensiones y Posición)
+[Según el enemigo, cambiaran las dimenciones de este,
+La posición right es indiferente, el enemigo se estará moviendo]*/
+.enemigo{
+    width: 102px;
+    height: 129px;
+    background-image: none;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+/*Puntos del juego (Dimensiones y Posición)
+[La posición right es indiferente, el Punto se estará moviendo]*/
+.punto{
+    width: 30px;
+    height: 50px;
+    background-image: none;
+    position: absolute;
+    bottom: 300px;
+    right: 0;
+}
+/*Munición por le juego (Dimensiones y Posición)
+[La posición right es indiferente, la munición se estará moviendo]*/
+.ammo{
+    width: 40px;
+    height: 40px;
+    background-image: url('../imagenes/Municion.png');
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+}
+/*Disparos en el juego (Dimensiones y Posición)
+[La posición left es indiferente, el Disparo se estará moviendo]*/
+.disparo{
+    width: 7px;
+    height: 3px;
+    background-image: url('../imagenes/Bala.png');
+    position: absolute;
+    bottom: 182px;
+    right: calc(100% - 150px);
+}
